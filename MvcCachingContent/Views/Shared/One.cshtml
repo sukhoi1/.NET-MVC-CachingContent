@@ -1,7 +1,9 @@
-﻿@model String
+﻿@model System.Int32?
 
 @{
     Layout = "_Layout.cshtml";
 }
 
 <div class="alert alert-success">Value: @Model</div>
+
+@Html.ActionLink("Update", "Index", null, new { @class = "btn btn-primary" })

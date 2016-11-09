@@ -1,17 +1,13 @@
-﻿using MvcCachingContent.Infrastructure;
-using System.Collections.Generic;
-using System.Diagnostics;
+﻿using System.Collections.Generic;
 using System.Web.Mvc;
 
 namespace MvcState.Controllers
 {
-    public class HomeController : Controller
+    public class LocationController : Controller
     {
         public ActionResult Index()
         {
-            int counterValue = AppStateHelper.IncrementAndGet(AppStateKeys.IndexCounter);
-            Debug.WriteLine($"IndexCounter: {counterValue}");
-            return View("~/Views/Shared/One.cshtml", (object)counterValue);
+            return View("~/Views/Shared/One.cshtml", (object)"demo");
         }
 
         public ActionResult Many()
