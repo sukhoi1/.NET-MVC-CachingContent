@@ -1,20 +1,18 @@
-﻿using System.Collections.Generic;
+﻿using System.Diagnostics;
 using System.Web.Mvc;
+using System.Web.UI;
+using MvcCachingContent.Infrastructure;
 
 namespace MvcState.Controllers
 {
     public class LocationController : Controller
     {
+        [OutputCache(Duration = 30, Location = OutputCacheLocation.Downstream)]
         public ActionResult Index()
         {
-            return View("~/Views/Shared/One.cshtml", (object)"demo");
-        }
-
-        public ActionResult Many()
-        {
-            Dictionary<string, string> data = new Dictionary<string, string>();
-            data.Add("Placeholder Property", "Placeholder Value");
-            return View("~/Views/Shared/Many.cshtml", (object)data);
+            int counterValue = AppStateHelper.IncrementAndGet(AppStateKeys.IndexCounter);
+            Debug.WriteLine($"IndexCounter: {counterValue}");
+            return View("~/Views/Shared/One.cshtml", (object)counterValue);
         }
     }
 }
