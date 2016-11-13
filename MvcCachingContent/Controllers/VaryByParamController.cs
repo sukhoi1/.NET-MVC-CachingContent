@@ -9,7 +9,7 @@ namespace MvcCachingContent.Controllers
     {
         [OutputCache(Duration = 30, VaryByHeader = "user-agent",
             VaryByParam = "name;city", Location = OutputCacheLocation.Any)]
-        public ActionResult Index()
+        public ActionResult Index(string name, string city)
         {
             int counterValue = AppStateHelper.IncrementAndGet(AppStateKeys.IndexCounter);
             Debug.WriteLine($"IndexCounter: {counterValue}");

@@ -27,6 +27,9 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home-Increment", "Index", "Home")</li>
                     <li>@Html.ActionLink("Location", "Index", "Location")</li>
+                    <li>@Html.ActionLink("VaryByHeader", "Index", "VaryByHeader")</li>
+                    <li>@Html.ActionLink("VaryByParam", "Index", "VaryByParam", new {name = "some", city = "London"}, null)</li>
+                    <li>@Html.ActionLink("VaryByCustom", "Index", "VaryByCustom")</li>
                 </ul>
             </div>
         </div>
