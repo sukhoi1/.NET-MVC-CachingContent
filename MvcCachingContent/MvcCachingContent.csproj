@@ -139,6 +139,7 @@
     <Compile Include="Controllers\DonutHoleController.cs" />
     <Compile Include="Controllers\LocationController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ValidatingCachedContentController.cs" />
     <Compile Include="Controllers\VaryByCustomController.cs" />
     <Compile Include="Controllers\VaryByParamController.cs" />
     <Compile Include="Controllers\VaryByHeaderController.cs" />
@@ -174,6 +175,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\ValidatingCachedContent\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
