@@ -131,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CacheProfilesDisableController.cs" />
     <Compile Include="Controllers\CacheProfilesController.cs" />
     <Compile Include="Controllers\CachingChildActionController.cs" />
     <Compile Include="Controllers\DonutController.cs" />
@@ -160,6 +161,7 @@
     <Content Include="Views\CachingChildAction\Index.cshtml" />
     <Content Include="Views\CachingChildAction\GetTime.cshtml" />
     <Content Include="Views\Donut\Index.cshtml" />
+    <Content Include="Views\CacheProfilesDisable\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

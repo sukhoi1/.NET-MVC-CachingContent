@@ -1,0 +1,13 @@
+﻿@model System.Int32?
+
+@{
+    Layout = "../Shared/_Layout.cshtml";
+}
+
+<p>
+    Using @Html.Raw(HttpUtility.HtmlEncode("<add name='cp1-disable' duration='0' noStore='true'/>")) duration, noStore attributes to disable caching from web.config and without code recompilation.
+</p>
+
+<div class="alert alert-success">Value: @Model</div>
+
+@Html.ActionLink("Update", "Index", null, new { @class = "btn btn-primary" })
