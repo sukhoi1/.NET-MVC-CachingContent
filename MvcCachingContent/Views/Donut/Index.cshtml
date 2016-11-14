@@ -1,0 +1,10 @@
+﻿@model System.Int32?
+
+@{
+    Layout = "../Shared/_Layout.cshtml";
+}
+
+<div class="alert alert-success">Value: @Model</div>
+
+@Html.Action("GetTime", "Donut", true)
+@Html.ActionLink("Update", "Index", null, new { @class = "btn btn-primary" })
