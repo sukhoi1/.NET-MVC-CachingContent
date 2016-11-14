@@ -134,6 +134,7 @@
     <Compile Include="Controllers\CacheProfilesDisableController.cs" />
     <Compile Include="Controllers\CacheProfilesController.cs" />
     <Compile Include="Controllers\CachingChildActionController.cs" />
+    <Compile Include="Controllers\CodeCachingController.cs" />
     <Compile Include="Controllers\DonutController.cs" />
     <Compile Include="Controllers\DonutHoleController.cs" />
     <Compile Include="Controllers\LocationController.cs" />
@@ -146,6 +147,7 @@
     </Compile>
     <Compile Include="Infrastructure\AppStateHelper.cs" />
     <Compile Include="Infrastructure\AppStateKeys.cs" />
+    <Compile Include="Infrastructure\CachingConfigurationLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
